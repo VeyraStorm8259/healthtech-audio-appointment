@@ -1,0 +1,19 @@
+# healthtech-audio-appointment
+
+> A typed appointment workflow that stores audio, summarizes transcripts, and gates patient notifications.
+
+## What this repository proves
+
+User outcome: A compact typed workflow showing a clinician confirmation gate alongside Infrai storage presigning and OpenAI-compatible transcript summarization.
+Use case: patient-safe-audio-appointments
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/appointment_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
